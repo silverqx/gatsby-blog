@@ -7,5 +7,9 @@
 require('dotenv').config()
 
 module.exports = {
+    siteMetadata: {
+        author: 'Silver Zachara',
+        email: 'silver.zachara@gmail.com',
+    },
     plugins: ['gatsby-plugin-sass'],
 }

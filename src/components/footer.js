@@ -1,8 +1,14 @@
 import React from 'react'
 
-export default () => (
-    <footer>
-        Created by <a href="mailto:silver.zachara@gmail.com">Silver Zachara</a>{' '}
-        © 2019
-    </footer>
-)
+import useSiteMetadata from '../hooks/use-site-metadata'
+
+export default () => {
+    const { author, email } = useSiteMetadata()
+
+    return (
+        <footer>
+            Created by <a href={`mailto:${email}`}>{author}</a>{' '}
+            © 2019
+        </footer>
+    )
+}
