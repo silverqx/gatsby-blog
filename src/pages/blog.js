@@ -4,7 +4,7 @@ import Layout from '../components/layout'
 
 export default () => (
     <Layout>
-        <h1>Home Page</h1>
-        <p>Gatsby showcase of the Blog application.</p>
+        <h1>Blog</h1>
+        <p>Blog</p>
     </Layout>
 )
