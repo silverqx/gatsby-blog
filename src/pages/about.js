@@ -1,10 +1,12 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
+import Head from '../components/head'
 import Layout from '../components/layout'
 
 export default () => (
     <Layout>
+        <Head title="About" />
         <h1>About</h1>
         <p>
             Hello I'm Silver and I'm a fullstack web developer, you can check my
