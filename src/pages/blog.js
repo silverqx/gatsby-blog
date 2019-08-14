@@ -12,9 +12,13 @@ export default () => {
             allContentfulBlogPost {
                 edges {
                     node {
+                        id
                         title
                         slug
                         publishedAt(fromNow: true)
+                        summary {
+                            summary
+                        }
                     }
                 }
             }
@@ -26,13 +30,14 @@ export default () => {
             <Head title="Blog" />
             <h1>Blog</h1>
             {data.allContentfulBlogPost.edges.map(edge => (
-                <div className={s.blog}>
+                <div className={s.blog} key={edge.node.id}>
                     <Link to={`/blog/${edge.node.slug}`}>
                         <h3>{edge.node.title}</h3>
                     </Link>
-                    <div class={s.publishedAt}>
+                    <div className={s.publishedAt}>
                         published at {edge.node.publishedAt}
                     </div>
+                    <div className={s.summary}>{edge.node.summary.summary}</div>
                 </div>
             ))}
         </Layout>

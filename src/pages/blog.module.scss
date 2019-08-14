@@ -1,3 +1,5 @@
+@import '../styles/common/variables';
+
 .blog {
     h3 {
         margin: 1.8rem 0 0;
@@ -5,5 +7,13 @@
 }
 
 .published-at {
+    color: $dark-grey;
     font-size: 1.2rem;
+    padding-left: .5rem;
+}
+
+.summary {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    margin-top: 2px;
 }

@@ -26,7 +26,7 @@ const BlogPost = props => {
                 const alt = node.data.target.fields.title['en-US']
                 const url = node.data.target.fields.file['en-US'].url
 
-                return <img src={url} alt={alt} />
+                return <img src={url} alt={alt} title={alt} />
             },
         },
     }
@@ -39,7 +39,7 @@ const BlogPost = props => {
                 <div className={s.publishedAt}>
                     published at {props.data.contentfulBlogPost.publishedAt}
                 </div>
-                <div>
+                <div className={s.content}>
                     {documentToReactComponents(
                         props.data.contentfulBlogPost.body.json,
                         options
