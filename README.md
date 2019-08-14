@@ -8,6 +8,8 @@
   Gatsby Blog Test Application
 </h1>
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/14fddc8f-409c-4041-931d-9a9635716797/deploy-status)](https://app.netlify.com/sites/zealous-kilby-fde776/deploys)
+
 This is my Gatsby Blog test application with [Contentful](https://contentful.com) as datasource.
 
 ## 🚀 Quick start
