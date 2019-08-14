@@ -35,7 +35,7 @@ export default () => {
                         <h3>{edge.node.title}</h3>
                     </Link>
                     <div className={s.publishedAt}>
-                        published at {edge.node.publishedAt}
+                        published {edge.node.publishedAt}
                     </div>
                     <div className={s.summary}>{edge.node.summary.summary}</div>
                 </div>
