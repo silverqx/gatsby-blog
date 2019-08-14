@@ -12,6 +12,8 @@
 
 This is my Gatsby Blog test application with [Contentful](https://contentful.com) as datasource.
 
+Final application is deployed at https://gatsby-blog-showcase.netlify.com/
+
 ## 🚀 Quick start
 
 1.  **Clone repository.**
