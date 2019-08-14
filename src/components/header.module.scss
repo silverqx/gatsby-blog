@@ -1,11 +1,13 @@
 @import '../styles/common/variables';
 
 .header {
+    display: flex;
+    align-items: flex-start;
 
     ul {
         display: flex;
         list-style: none;
-        padding: 0;
+        padding: 1px 0 0;
     }
 
     li {
@@ -26,4 +28,9 @@
             text-decoration: underline;
         }
     }
+}
+
+.logo {
+    margin-right: 1.5rem;
+    width: 10rem;
 }

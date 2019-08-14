@@ -2,9 +2,13 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import s from './header.module.scss'
+import logo from '../images/logo.svg'
 
 export default () => (
     <header className={s.header}>
+        <Link to="/">
+            <img src={logo} alt="" className={s.logo} />
+        </Link>
         <nav>
             <ul>
                 <li>
@@ -13,7 +17,11 @@ export default () => (
                     </Link>
                 </li>
                 <li>
-                    <Link to="/blog" activeClassName={s.activeNavItem}>
+                    <Link
+                        to="/blog"
+                        activeClassName={s.activeNavItem}
+                        partiallyActive={true}
+                    >
                         Blog
                     </Link>
                 </li>

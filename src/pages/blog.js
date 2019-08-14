@@ -4,6 +4,8 @@ import { graphql, useStaticQuery, Link } from 'gatsby'
 import Head from '../components/head'
 import Layout from '../components/layout'
 
+import s from './blog.module.scss'
+
 export default () => {
     const data = useStaticQuery(graphql`
         query {
@@ -24,11 +26,13 @@ export default () => {
             <Head title="Blog" />
             <h1>Blog</h1>
             {data.allContentfulBlogPost.edges.map(edge => (
-                <div>
+                <div className={s.blog}>
                     <Link to={`/blog/${edge.node.slug}`}>
                         <h3>{edge.node.title}</h3>
                     </Link>
-                    <div>{edge.node.publishedAt}</div>
+                    <div class={s.publishedAt}>
+                        published at {edge.node.publishedAt}
+                    </div>
                 </div>
             ))}
         </Layout>
